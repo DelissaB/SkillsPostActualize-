@@ -25,17 +25,26 @@
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
-arrays = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
-new = []
-arrays.each do |array|
-  if array[:price] > 5
-    new << array
-  end
-end
-p new
+# arrays = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# new = []
+# arrays.each do |array|
+#   if array[:price] > 5
+#     new << array
+#   end
+# end
+# p new
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+numbers = [2, 4, 5, 1, 8, 9, 7]
+new = []
+numbers.each do |number|
+  if number % 2 == 0
+    new << number
+  end
+end
+p new
 
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
