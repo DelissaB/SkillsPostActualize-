@@ -64,18 +64,30 @@
 # end
 # p new
 
-strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
-new = strings.select do |string|
-  string.length < 4
-end
+# strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
+# new = strings.select do |string|
+#   string.length < 4
+# end
 
-p new
+# p new
 
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
+# hashes = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# new_hashes = hashes.select do |hash|
+#   hash[:name].length < 6
+# end
+# p new_hashes
+
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+
+arrays = [8, 23, 0, 44, 1980, 3]
+new_arrays = arrays.select do |array|
+  array < 10
+end
+p new_arrays
 
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
