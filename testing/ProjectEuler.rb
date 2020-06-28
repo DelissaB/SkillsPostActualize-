@@ -8,7 +8,7 @@
 i = 0
 new = []
 sum = 0
-while i < 100
+while i < 1000
   if i % 3 == 0 || i % 5 == 0
     new << i
   end
