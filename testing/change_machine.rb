@@ -4,6 +4,10 @@ require "rspec"
 class ChangeMachine
   def change(cents)
     coins = []
+    while cents >= 25
+      coins << 25
+      cents -= 25
+    end
     while cents >= 10
       coins << 10
       cents -= 10
@@ -51,6 +55,16 @@ RSpec.describe ChangeMachine do
       change_machine = ChangeMachine.new
       result = change_machine.change(10)
       expect(result).to eq([10])
+    end
+    it "should return [25] when given 25" do
+      change_machine = ChangeMachine.new
+      result = change_machine.change(25)
+      expect(result).to eq([25])
+    end
+    it "should return [25,25, 10, 5] when given 65" do
+      change_machine = ChangeMachine.new
+      result = change_machine.change(65)
+      expect(result).to eq([25, 25, 10, 5])
     end
   end
 end
