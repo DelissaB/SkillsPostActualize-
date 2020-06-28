@@ -4,22 +4,29 @@ require "rspec"
 class ChangeMachine
   def change(cents)
     coins = []
-    while cents >= 25
-      coins << 25
-      cents -= 25
+    denominations = [25, 10, 5, 1]
+    denominations.each do |denominiation|
+      while cents >= denominiation
+        coins << denominiation
+        cents -= denominiation
+      end
     end
-    while cents >= 10
-      coins << 10
-      cents -= 10
-    end
-    while cents >= 5
-      coins << 5
-      cents -= 5
-    end
-    while cents > 0
-      coins << 1
-      cents -= 1
-    end
+    # while cents >= 25
+    #   coins << 25
+    #   cents -= 25
+    # end
+    # while cents >= 10
+    #   coins << 10
+    #   cents -= 10
+    # end
+    # while cents >= 5
+    #   coins << 5
+    #   cents -= 5
+    # end
+    # while cents > 0
+    #   coins << 1
+    #   cents -= 1
+    # end
     coins
   end
 end
