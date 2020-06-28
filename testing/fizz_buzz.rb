@@ -19,7 +19,9 @@ require "rspec"
 
 class FizzBuzz
   def output(number)
-    if number % 3 == 0
+    if number % 3 == 0 && number % 5 == 0
+      return "fizz buzz"
+    elsif number % 3 == 0
       return "fizz"
     elsif number % 5 == 0
       return "buzz"
@@ -53,6 +55,10 @@ RSpec.describe FizzBuzz do
     it 'should return \'buzz\' when given 10' do
       fizz_buzz = FizzBuzz.new
       expect(fizz_buzz.output(10)).to eq("buzz")
+    end
+    it 'should return \'fizz buzz\' when given 15' do
+      fizz_buzz = FizzBuzz.new
+      expect(fizz_buzz.output(15)).to eq("fizz buzz")
     end
   end
 end
