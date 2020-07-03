@@ -68,16 +68,25 @@
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-pairs = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# pairs = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
 
-new_pairs = pairs[0]
+# new_pairs = pairs[0]
 
-pairs.each do |pair|
-  if pair[:name].length < new_pairs[:name].length
-    new_pairs = pair
-  end
-end
-p new_pairs
+# pairs.each do |pair|
+#   if pair[:name].length < new_pairs[:name].length
+#     new_pairs = pair
+#   end
+# end
+# p new_pairs
 
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
+
+numbers = [5, 10, 8, 3]
+maximum = numbers[0]
+numbers.each do |number|
+  if number > maximum
+    maximum = number
+  end
+end
+p maximum
