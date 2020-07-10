@@ -26,11 +26,16 @@
 # p word.reverse
 
 # 5. Write a program that asks the user to enter a number, then prints the number times 10.
-puts "Enter a number"
-number = gets.chomp
-p number.to_i * 10
+# puts "Enter a number"
+# number = gets.chomp
+# p number.to_i * 10
 
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+
+puts "Enter two words"
+word1 = gets.chomp
+word2 = gets.chomp
+p word1.upcase + word2.upcase
 
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
