@@ -14,13 +14,16 @@
 
 # 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
 
-puts "Enter a number"
-number1 = gets.chomp
-number2 = gets.chomp
-new_number = number1.to_i + number2.to_i
-p new_number
+# puts "Enter a number"
+# number1 = gets.chomp
+# number2 = gets.chomp
+# new_number = number1.to_i + number2.to_i
+# p new_number
 
 # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
+puts "Enter a word"
+word = gets.chomp
+p word.reverse
 
 # 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
