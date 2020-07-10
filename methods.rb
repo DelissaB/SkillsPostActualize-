@@ -6,13 +6,19 @@
 
 # 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
 
-puts "Enter a number"
-number = gets.chomp
-if number.to_i > 100
-  puts "Wow thats a big number"
-end
+# puts "Enter a number"
+# number = gets.chomp
+# if number.to_i > 100
+#   puts "Wow thats a big number"
+# end
 
 # 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+
+puts "Enter a number"
+number1 = gets.chomp
+number2 = gets.chomp
+new_number = number1.to_i + number2.to_i
+p new_number
 
 # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
