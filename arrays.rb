@@ -25,11 +25,17 @@
 # p numbers
 
 # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
-letters = ["hello", "say", "hi"]
-letters[2] = letters[2].upcase
-p letters
+# letters = ["hello", "say", "hi"]
+# letters[2] = letters[2].upcase
+# p letters
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+names = ["lisa", "jon", "jae"]
+i = 0
+while i < names.length
+  p names[i]
+  i += 1
+end
 
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
