@@ -11,11 +11,18 @@
 
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-numbers = [1, 2, 3, 4, 5]
-numbers.each do |number|
-  p number
-end
+# numbers = [1, 2, 3, 4, 5]
+# numbers.each do |number|
+#   p number
+# end
+
 # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+numbers = [1]
+numbers << 2
+numbers << 3
+numbers << 4
+
+p numbers
 
 # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
