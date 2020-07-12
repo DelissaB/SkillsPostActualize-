@@ -15,31 +15,31 @@
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-# colors = [{ id: 1, color: "blue", price: 32 }, { id: 2, color: "red", price: 12 }]
-# new_colors = {}
-# i = 0
+colors = [{ id: 1, color: "blue", price: 32 }, { id: 2, color: "red", price: 12 }]
+new_colors = {}
+i = 0
 
-# while i < colors.length
-#   new_colors[colors[i][:id]] = colors[i]
-#   i += 1
-# end
-# p new_colors
+while i < colors.length
+  new_colors[colors[i][:id]] = colors[i]
+  i += 1
+end
+p new_colors
 
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-word = "bookeeper"
-letter_frequencies = {}
-i = 0
-while i < word.length
-  letter = word[i]
-  if letter_frequencies[letter] == nil
-    letter_frequencies[letter] = 0
-  end
-  letter_frequencies[letter] += 1
-  i += 1
-end
-p letter_frequencies
+# word = "bookeeper"
+# letter_frequencies = {}
+# i = 0
+# while i < word.length
+#   letter = word[i]
+#   if letter_frequencies[letter] == nil
+#     letter_frequencies[letter] = 0
+#   end
+#   letter_frequencies[letter] += 1
+#   i += 1
+# end
+# p letter_frequencies
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
