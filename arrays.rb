@@ -1,9 +1,13 @@
 # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
-words = ["hello", "goodbye", "purple"]
-words << "yellow"
-words << "baby"
-p words
+# words = ["hello", "goodbye", "purple"]
+# words << "yellow"
+# words << "baby"
+# p words
 # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+words = ["a", "b", "c", "d"]
+words[1] = 2
+p words
 
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
