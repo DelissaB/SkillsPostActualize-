@@ -44,13 +44,13 @@ p letter_frequencies
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-# things = { "chair" => 100, "book" => 14 }
-# name_price_pairs = []
+things = { "chair" => 100, "book" => 14 }
+name_price_pairs = []
 
-# things.each do |name, price|
-#   name_price_pairs << [name, price]
-# end
-# p name_price_pairs
+things.each do |name, price|
+  name_price_pairs << [name, price]
+end
+p name_price_pairs
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
@@ -58,15 +58,15 @@ p letter_frequencies
 #Convert a hash into an array of hashes, use keys from each hash as the :id
 #the name is :id
 
-# humans = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
-# humans_array = []
+humans = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+humans_array = []
 
 
-# humans.each do |id, human|
-#   human[:id] = id
-#   humans_array << human
-# end
-# p humans_array
+humans.each do |id, human|
+  human[:id] = id
+  humans_array << human
+end
+p humans_array
 
 
 #  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
