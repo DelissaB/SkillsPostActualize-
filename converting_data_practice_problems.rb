@@ -44,20 +44,50 @@
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-things = { "chair" => 100, "book" => 14 }
-name_price_pairs = []
+# things = { "chair" => 100, "book" => 14 }
+# name_price_pairs = []
 
-things.each do |name, price|
-  name_price_pairs << [name, price]
-end
-p name_price_pairs
+# things.each do |name, price|
+#   name_price_pairs << [name, price]
+# end
+# p name_price_pairs
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
+#Convert a hash into an array of hashes, use keys from each hash as the :id
+#the name is :id
+
+# humans = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+# humans_array = []
+
+
+# humans.each do |id, human|
+#   human[:id] = id
+#   humans_array << human
+# end
+# p humans_array
+
+
 #  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
 #     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
 
+#Convert an array of strings into a hash
+#array should include keys for each string
+#array should include value for number of times string appears in the array
+
+words = ["do", "or", "do", "not"] 
+word_frequencies = {}
+i = 0 
+while i < words.length
+  word = words[i]
+if word_frequencies[word] == nil
+  word_frequencies[word] = 0 
+end
+   word_frequecies[word] += 1
+   i+=1
+end 
+p word_frequencies
 #  7. Convert a hash into a flat array containing all the hash’s keys and values.
 #     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
 
