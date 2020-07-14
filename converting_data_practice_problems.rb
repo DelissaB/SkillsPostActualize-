@@ -76,18 +76,18 @@ p humans_array
 #array should include keys for each string
 #array should include value for number of times string appears in the array
 
-words = ["do", "or", "do", "not"] 
-word_frequencies = {}
-i = 0 
-while i < words.length
-  word = words[i]
-if word_frequencies[word] == nil
-  word_frequencies[word] = 0 
-end
-   word_frequecies[word] += 1
-   i+=1
-end 
-p word_frequencies
+# words = ["do", "or", "do", "not"] 
+# word_frequencies = {}
+# i = 0 
+# while i < words.length
+#   word = words[i]
+# if word_frequencies[word] == nil
+#   word_frequencies[word] = 0 
+# end
+#    word_frequecies[word] += 1
+#    i+=1
+# end 
+# p word_frequencies
 #  7. Convert a hash into a flat array containing all the hash’s keys and values.
 #     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
 
