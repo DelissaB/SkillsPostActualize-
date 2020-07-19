@@ -102,10 +102,10 @@
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 
-numbers = [2, 4, 5, 1, 8, 9, 7]
-new_numbers = numbers.select do |number|
-  if number % 2 == 1
-    new_numbers = number
-  end
-end
-p new_numbers
+# numbers = [2, 4, 5, 1, 8, 9, 7]
+# new_numbers = numbers.select do |number|
+#   if number % 2 == 1
+#     new_numbers = number
+#   end
+# end
+# p new_numbers
