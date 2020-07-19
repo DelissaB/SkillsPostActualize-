@@ -43,17 +43,26 @@
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
 
-words = ["a", "man", "a", "plan", "a", "canal", "panama"]
-new_words = words.select do |word|
-  if word.length < 4
-    new_words = word
-  end
-end
-p new_words
+# words = ["a", "man", "a", "plan", "a", "canal", "panama"]
+# new_words = words.select do |word|
+#   if word.length < 4
+#     new_words = word
+#   end
+# end
+# p new_words
 
 
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+new_items = items.select do |item|
+  item = item[:name]
+  if item.length <  6
+    new_items = items
+  end
+end
+p new_items
+
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
