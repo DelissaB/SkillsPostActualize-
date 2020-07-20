@@ -1,25 +1,39 @@
 # 1. Use a nested loop to convert an array of number pairs into a single flattened array.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
-number_pairs = [[1, 3], [8, 9], [2, 16]]
-flattened_numbers = []
-index1 = 0
-while index1 < number_pairs.length
-  number_pair = number_pairs[index1]
-  index2 = 0
-  while index2 < number_pair.length
-    number = number_pair[index2]
-    flattened_numbers << number
-    index2 = index2 + 1
-  end
-  index1 = index1 + 1
-end
-p flattened_numbers
+# number_pairs = [[1, 3], [8, 9], [2, 16]]
+# flattened_numbers = []
+# index1 = 0
+# while index1 < number_pairs.length
+#   number_pair = number_pairs[index1]
+#   index2 = 0
+#   while index2 < number_pair.length
+#     number = number_pair[index2]
+#     flattened_numbers << number
+#     index2 = index2 + 1
+#   end
+#   index1 = index1 + 1
+# end
+# p flattened_numbers
 
 
 
 
 #  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 #     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+
+letters1 = ["a", "b", "c"]
+letters2 = ["d", "e", "f", "g"]
+combined_letters = []
+index1 = 0
+while index1 < letters1.length
+  index2 = 0
+  while index2 < letters2.length
+    combined_letters << letters1[index1] + letters2[index2]
+    index2 += 1
+  end
+  index1 += 1
+end
+p combined_letters
 
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
